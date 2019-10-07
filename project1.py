@@ -9,7 +9,7 @@ import requests
 
 
 HTTP_VERBS = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
-with open("/words") as fp:
+with open("words") as fp:
     WORDS = fp.read().split()
 
 

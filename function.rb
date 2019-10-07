@@ -98,3 +98,11 @@ if $PROGRAM_NAME == __FILE__
       'path' => '/'
   })
 end
+
+
+
+
+rescue JWT::ImmatureSignature
+response(status: 401)
+rescue JWT::ExpiredSignature
+response(status: 401)

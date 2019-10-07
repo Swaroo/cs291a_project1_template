@@ -1,0 +1,490 @@
+ 8 -c 1 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 32 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      1
+Time taken for tests:   8.033 seconds
+Complete requests:      32
+Failed requests:        0
+Total transferred:      13984 bytes
+Total body sent:        5888
+HTML transferred:       4640 bytes
+Requests per second:    3.98 [#/sec] (mean)
+Time per request:       251.047 [ms] (mean)
+Time per request:       251.047 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.70 [Kbytes/sec] received
+                        0.72 kb/s sent
+                        2.42 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      117  168 203.1    123    1253
+Processing:    57   83  18.4     80     165
+Waiting:       57   83  18.4     79     164
+Total:        178  251 203.6    202    1337
+
+Percentage of the requests served within a certain time (ms)
+  50%    202
+  66%    216
+  75%    218
+  80%    221
+  90%    231
+  95%    444
+  98%   1337
+  99%   1337
+ 100%   1337 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -T 'application/json' -p PostData -t 8 -c 4 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 145 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      4
+Time taken for tests:   8.009 seconds
+Complete requests:      145
+Failed requests:        0
+Total transferred:      63365 bytes
+Total body sent:        26864
+HTML transferred:       21025 bytes
+Requests per second:    18.10 [#/sec] (mean)
+Time per request:       220.943 [ms] (mean)
+Time per request:       55.236 [ms] (mean, across all concurrent requests)
+Transfer rate:          7.73 [Kbytes/sec] received
+                        3.28 kb/s sent
+                        11.00 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      117  125   6.9    124     162
+Processing:    53   93  45.5     85     404
+Waiting:       53   93  45.5     85     404
+Total:        172  218  47.1    210     536
+
+Percentage of the requests served within a certain time (ms)
+  50%    210
+  66%    214
+  75%    220
+  80%    223
+  90%    233
+  95%    283
+  98%    478
+  99%    490
+ 100%    536 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -T 'application/json' -p PostData -t 8 -c 4 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 147 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      4
+Time taken for tests:   8.012 seconds
+Complete requests:      147
+Failed requests:        0
+Total transferred:      64239 bytes
+Total body sent:        27416
+HTML transferred:       21315 bytes
+Requests per second:    18.35 [#/sec] (mean)
+Time per request:       218.023 [ms] (mean)
+Time per request:       54.506 [ms] (mean, across all concurrent requests)
+Transfer rate:          7.83 [Kbytes/sec] received
+                        3.34 kb/s sent
+                        11.17 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      117  126   9.7    124     198
+Processing:    51   89  26.9     86     275
+Waiting:       51   89  26.8     86     275
+Total:        173  215  27.6    210     397
+
+Percentage of the requests served within a certain time (ms)
+  50%    210
+  66%    214
+  75%    219
+  80%    221
+  90%    232
+  95%    254
+  98%    332
+  99%    348
+ 100%    397 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -T 'application/json' -p PostData -t 8 -c 1 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 36 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      1
+Time taken for tests:   8.093 seconds
+Complete requests:      36
+Failed requests:        0
+Total transferred:      15732 bytes
+Total body sent:        6808
+HTML transferred:       5220 bytes
+Requests per second:    4.45 [#/sec] (mean)
+Time per request:       224.801 [ms] (mean)
+Time per request:       224.801 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.90 [Kbytes/sec] received
+                        0.82 kb/s sent
+                        2.72 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      119  133  40.9    125     368
+Processing:    56   88  35.7     88     279
+Waiting:       56   88  35.7     88     279
+Total:        178  221  74.8    214     647
+
+Percentage of the requests served within a certain time (ms)
+  50%    214
+  66%    219
+  75%    220
+  80%    221
+  90%    226
+  95%    249
+  98%    647
+  99%    647
+ 100%    647 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -T 'application/json' -p PostData -t 8 -c 16 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 534 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      16
+Time taken for tests:   8.004 seconds
+Complete requests:      534
+Failed requests:        0
+Total transferred:      233358 bytes
+Total body sent:        99176
+HTML transferred:       77430 bytes
+Requests per second:    66.72 [#/sec] (mean)
+Time per request:       239.806 [ms] (mean)
+Time per request:       14.988 [ms] (mean, across all concurrent requests)
+Transfer rate:          28.47 [Kbytes/sec] received
+                        12.10 kb/s sent
+                        40.57 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      114  139 110.7    125    1201
+Processing:    54   97  46.8     89     429
+Waiting:       54   97  46.7     89     429
+Total:        174  237 120.3    216    1285
+
+Percentage of the requests served within a certain time (ms)
+  50%    216
+  66%    222
+  75%    228
+  80%    230
+  90%    242
+  95%    310
+  98%    548
+  99%   1211
+ 100%   1285 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -T 'application/json' -p PostData -t 8 -c 16 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 543 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      16
+Time taken for tests:   8.002 seconds
+Complete requests:      543
+Failed requests:        0
+Total transferred:      237291 bytes
+Total body sent:        101016
+HTML transferred:       78735 bytes
+Requests per second:    67.86 [#/sec] (mean)
+Time per request:       235.795 [ms] (mean)
+Time per request:       14.737 [ms] (mean, across all concurrent requests)
+Transfer rate:          28.96 [Kbytes/sec] received
+                        12.33 kb/s sent
+                        41.29 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      117  139 107.3    126    1392
+Processing:    52   93  31.9     89     395
+Waiting:       52   92  29.2     89     384
+Total:        172  232 111.6    217    1498
+
+Percentage of the requests served within a certain time (ms)
+  50%    217
+  66%    224
+  75%    229
+  80%    232
+  90%    243
+  95%    263
+  98%    460
+  99%    527
+ 100%   1498 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -T 'application/json' -p PostData -t 8 -c 64 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 2079 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      64
+Time taken for tests:   8.007 seconds
+Complete requests:      2079
+Failed requests:        0
+Total transferred:      908523 bytes
+Total body sent:        386400
+HTML transferred:       301455 bytes
+Requests per second:    259.65 [#/sec] (mean)
+Time per request:       246.485 [ms] (mean)
+Time per request:       3.851 [ms] (mean, across all concurrent requests)
+Transfer rate:          110.81 [Kbytes/sec] received
+                        47.13 kb/s sent
+                        157.94 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      117  138  60.2    131    1382
+Processing:    52  103  45.3     96     458
+Waiting:       52  103  45.3     95     457
+Total:        176  242  78.0    229    1449
+
+Percentage of the requests served within a certain time (ms)
+  50%    229
+  66%    236
+  75%    240
+  80%    244
+  90%    258
+  95%    292
+  98%    520
+  99%    539
+ 100%   1449 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -T 'application/json' -p PostData -t 8 -c 64 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 1968 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      64
+Time taken for tests:   8.001 seconds
+Complete requests:      1968
+Failed requests:        0
+Total transferred:      860016 bytes
+Total body sent:        366712
+HTML transferred:       285360 bytes
+Requests per second:    245.96 [#/sec] (mean)
+Time per request:       260.202 [ms] (mean)
+Time per request:       4.066 [ms] (mean, across all concurrent requests)
+Transfer rate:          104.97 [Kbytes/sec] received
+                        44.76 kb/s sent
+                        149.72 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      118  155 112.0    132    1326
+Processing:    52  101  45.1     94    1124
+Waiting:       52  101  44.9     94    1124
+Total:        178  256 120.9    231    1440
+
+Percentage of the requests served within a certain time (ms)
+  50%    231
+  66%    240
+  75%    248
+  80%    254
+  90%    316
+  95%    398
+  98%    440
+  99%   1227
+ 100%   1440 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -T 'application/json' -p PostData -t 8 -c 256 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 4252 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      256
+Time taken for tests:   8.001 seconds
+Complete requests:      4252
+Failed requests:        0
+Total transferred:      1858561 bytes
+Total body sent:        796720
+HTML transferred:       616685 bytes
+Requests per second:    531.41 [#/sec] (mean)
+Time per request:       481.736 [ms] (mean)
+Time per request:       1.882 [ms] (mean, across all concurrent requests)
+Transfer rate:          226.84 [Kbytes/sec] received
+                        97.24 kb/s sent
+                        324.08 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      135  306 118.6    303    1741
+Processing:    57  161  66.6    148     725
+Waiting:       57  160  66.0    147     652
+Total:        202  467 143.3    456    2139
+
+Percentage of the requests served within a certain time (ms)
+  50%    456
+  66%    480
+  75%    498
+  80%    513
+  90%    569
+  95%    751
+  98%    811
+  99%    880
+ 100%   2139 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -T 'application/json' -p PostData -t 8 -c 256 https://oaj7f2a0x0.execute-api.us-west-2.amazonaws.com/prod/token
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking oaj7f2a0x0.execute-api.us-west-2.amazonaws.com (be patient)
+Finished 4853 requests
+
+
+Server Software:        
+Server Hostname:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        oaj7f2a0x0.execute-api.us-west-2.amazonaws.com
+
+Document Path:          /prod/token
+Document Length:        145 bytes
+
+Concurrency Level:      256
+Time taken for tests:   8.001 seconds
+Complete requests:      4853
+Failed requests:        0
+Total transferred:      2120761 bytes
+Total body sent:        911720
+HTML transferred:       703685 bytes
+Requests per second:    606.53 [#/sec] (mean)
+Time per request:       422.070 [ms] (mean)
+Time per request:       1.649 [ms] (mean, across all concurrent requests)
+Transfer rate:          258.84 [Kbytes/sec] received
+                        111.28 kb/s sent
+                        370.12 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      129  272 138.8    249    3355
+Processing:    61  135  34.0    131     438
+Waiting:       61  134  34.0    131     430
+Total:        217  406 142.0    388    3509
+
+Percentage of the requests served within a certain time (ms)
+  50%    388
+  66%    409
+  75%    424
+  80%    439
+  90%    486
+  95%    567
+  98%    636
+  99%   1317
+ 100%   3509 (longest request)

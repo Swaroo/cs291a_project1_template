@@ -1,0 +1,323 @@
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -t 8 -c 1 https://swaroo.github.io/
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking swaroo.github.io (be patient)
+Finished 190 requests
+
+
+Server Software:        GitHub.com
+Server Hostname:        swaroo.github.io
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        swaroo.github.io
+
+Document Path:          /
+Document Length:        1975 bytes
+
+Concurrency Level:      1
+Time taken for tests:   8.013 seconds
+Complete requests:      190
+Failed requests:        0
+Total transferred:      496487 bytes
+HTML transferred:       375250 bytes
+Requests per second:    23.71 [#/sec] (mean)
+Time per request:       42.174 [ms] (mean)
+Time per request:       42.174 [ms] (mean, across all concurrent requests)
+Transfer rate:          60.51 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       22   29  20.9     25     278
+Processing:     7   13  32.8      8     347
+Waiting:        6   12  32.2      8     341
+Total:         29   42  38.7     33     371
+
+Percentage of the requests served within a certain time (ms)
+  50%     33
+  66%     35
+  75%     36
+  80%     38
+  90%     54
+  95%     70
+  98%    113
+  99%    334
+ 100%    371 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -t 8 -c 4 https://swaroo.github.io/
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking swaroo.github.io (be patient)
+Finished 702 requests
+
+
+Server Software:        GitHub.com
+Server Hostname:        swaroo.github.io
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        swaroo.github.io
+
+Document Path:          /
+Document Length:        1975 bytes
+
+Concurrency Level:      4
+Time taken for tests:   8.052 seconds
+Complete requests:      702
+Failed requests:        0
+Total transferred:      1836364 bytes
+HTML transferred:       1386450 bytes
+Requests per second:    87.18 [#/sec] (mean)
+Time per request:       45.882 [ms] (mean)
+Time per request:       11.470 [ms] (mean, across all concurrent requests)
+Transfer rate:          222.71 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       21   33  68.0     26    1061
+Processing:     6   11  21.2      9     298
+Waiting:        6   11  20.3      8     250
+Total:         29   44  71.2     35    1070
+
+Percentage of the requests served within a certain time (ms)
+  50%     35
+  66%     37
+  75%     38
+  80%     39
+  90%     46
+  95%     55
+  98%     64
+  99%    253
+ 100%   1070 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -t 8 -c 16 https://swaroo.github.io/ 
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking swaroo.github.io (be patient)
+Finished 2046 requests
+
+
+Server Software:        GitHub.com
+Server Hostname:        swaroo.github.io
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        swaroo.github.io
+
+Document Path:          /
+Document Length:        1975 bytes
+
+Concurrency Level:      16
+Time taken for tests:   8.005 seconds
+Complete requests:      2046
+Failed requests:        0
+Total transferred:      5353848 bytes
+HTML transferred:       4040850 bytes
+Requests per second:    255.59 [#/sec] (mean)
+Time per request:       62.601 [ms] (mean)
+Time per request:       3.913 [ms] (mean, across all concurrent requests)
+Transfer rate:          653.13 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       23   48 104.3     33    1110
+Processing:     7   13  16.7     11     312
+Waiting:        7   13  15.8     11     302
+Total:         31   61 105.8     45    1123
+
+Percentage of the requests served within a certain time (ms)
+  50%     45
+  66%     48
+  75%     50
+  80%     52
+  90%     59
+  95%     80
+  98%    269
+  99%    475
+ 100%   1123 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -t 8 -c 64 https://swaroo.github.io/ 
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking swaroo.github.io (be patient)
+Finished 4006 requests
+
+
+Server Software:        GitHub.com
+Server Hostname:        swaroo.github.io
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        swaroo.github.io
+
+Document Path:          /
+Document Length:        1975 bytes
+
+Concurrency Level:      64
+Time taken for tests:   8.001 seconds
+Complete requests:      4006
+Failed requests:        0
+Total transferred:      10487608 bytes
+HTML transferred:       7913221 bytes
+Requests per second:    500.66 [#/sec] (mean)
+Time per request:       127.831 [ms] (mean)
+Time per request:       1.997 [ms] (mean, across all concurrent requests)
+Transfer rate:          1280.00 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       29   96  76.4     87    1337
+Processing:     7   30  15.4     28     342
+Waiting:        7   29  13.9     27     269
+Total:         42  126  78.7    117    1362
+
+Percentage of the requests served within a certain time (ms)
+  50%    117
+  66%    127
+  75%    135
+  80%    141
+  90%    158
+  95%    184
+  98%    230
+  99%    335
+ 100%   1362 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -t 8 -c 256 https://swaroo.github.io/
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking swaroo.github.io (be patient)
+Finished 4117 requests
+
+
+Server Software:        GitHub.com
+Server Hostname:        swaroo.github.io
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        swaroo.github.io
+
+Document Path:          /
+Document Length:        1975 bytes
+
+Concurrency Level:      256
+Time taken for tests:   8.003 seconds
+Complete requests:      4117
+Failed requests:        0
+Total transferred:      10781338 bytes
+HTML transferred:       8132446 bytes
+Requests per second:    514.44 [#/sec] (mean)
+Time per request:       497.624 [ms] (mean)
+Time per request:       1.944 [ms] (mean, across all concurrent requests)
+Transfer rate:          1315.62 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      200  367  92.1    357    1410
+Processing:    50  116  35.6    110     491
+Waiting:       48  115  35.5    109     486
+Total:        300  483  94.8    477    1505
+
+Percentage of the requests served within a certain time (ms)
+  50%    477
+  66%    499
+  75%    516
+  80%    530
+  90%    560
+  95%    585
+  98%    654
+  99%    865
+ 100%   1505 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -t 8 -c 256 https://swaroo.github.io/
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking swaroo.github.io (be patient)
+Finished 4594 requests
+
+
+Server Software:        GitHub.com
+Server Hostname:        swaroo.github.io
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        swaroo.github.io
+
+Document Path:          /
+Document Length:        1975 bytes
+
+Concurrency Level:      256
+Time taken for tests:   8.002 seconds
+Complete requests:      4594
+Failed requests:        0
+Total transferred:      12022498 bytes
+HTML transferred:       9073150 bytes
+Requests per second:    574.11 [#/sec] (mean)
+Time per request:       445.905 [ms] (mean)
+Time per request:       1.742 [ms] (mean, across all concurrent requests)
+Transfer rate:          1467.24 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      183  329  65.5    330     945
+Processing:    54  106  28.8    103     626
+Waiting:       54  105  28.3    102     555
+Total:        263  435  78.4    431    1059
+
+Percentage of the requests served within a certain time (ms)
+  50%    431
+  66%    461
+  75%    475
+  80%    486
+  90%    527
+  95%    570
+  98%    587
+  99%    677
+ 100%   1059 (longest request)
+swaroop@swaroop:~/Fall2019/Scalable/cs291a_project1_template$ ab -t 8 -c 64 https://swaroo.github.io/ 
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking swaroo.github.io (be patient)
+Finished 4569 requests
+
+
+Server Software:        GitHub.com
+Server Hostname:        swaroo.github.io
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        swaroo.github.io
+
+Document Path:          /
+Document Length:        1975 bytes
+
+Concurrency Level:      64
+Time taken for tests:   8.003 seconds
+Complete requests:      4569
+Failed requests:        0
+Total transferred:      11945083 bytes
+HTML transferred:       9023775 bytes
+Requests per second:    570.90 [#/sec] (mean)
+Time per request:       112.105 [ms] (mean)
+Time per request:       1.752 [ms] (mean, across all concurrent requests)
+Transfer rate:          1457.55 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       49   85  76.9     76    1115
+Processing:     9   26  10.7     25     333
+Waiting:        9   25  10.0     24     251
+Total:         69  111  78.2    102    1214
+
+Percentage of the requests served within a certain time (ms)
+  50%    102
+  66%    109
+  75%    114
+  80%    118
+  90%    128
+  95%    140
+  98%    185
+  99%    233
+ 100%   1214 (longest request)
+
